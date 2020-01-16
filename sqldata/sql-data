@@ -1,0 +1,12 @@
+#DEGREES_MASTER Table#
+
+ create table DEGREES_MASTER (DEGREE_ID number(10) primary key, DEGREE_NAME varchar2(30));
+
+#YEARS_MASTER Table#
+
+create table YEARS_MASTER (YEAR_ID number(10) primary key, YEAR Number(10));
+
+# UNIVERSITY_MASTER #
+
+create table UNIVERSITY_MASTER (UNIV_ID number(10) primary key, UNIV_NAME varchar2(30));
+

@@ -1,0 +1,26 @@
+server:
+  port: 1234
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    password: manager
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+  h2:
+    console:
+      enabled: true
+  #    path: /h2
+      settings:
+        trace: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+      
